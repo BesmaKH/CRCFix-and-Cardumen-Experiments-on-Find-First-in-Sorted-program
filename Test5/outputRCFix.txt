@@ -1,0 +1,3149 @@
+[INFO ] fr.inria.astor.core.setup.ProjectConfiguration.getVersionJDK(ProjectConfiguration.java:282) - Version of the JVM used: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:370) - Java version of the JDK used to run tests: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:371) - The compliance of the JVM is:  8
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:645) - command line arguments: [-customengine  fr.inria.astor.approaches.rcapr.RCFixCr  -package  java_programs  -srcjavafolder  /src  -id  find5  -scope  package  -binjavafolder  /bin  -population  1  -flthreshold  0.0  -seed  1  -stopfirst  TRUE  -loglevel  INFO  -srctestfolder  /src  -location  /home/basma/Desktop/astor/./examples/quixbugs/find5  -javacompliancelevel  8  -dependencies  /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar  -parameters  logtestexecution:TRUE:disablelog:TRUE:maxtime:120:autocompile:true:gzoltarpackagetonotinstrument:com.google.gson_engine-java_programs_test:maxnumbersolutions:1:maxmodificationpoints:8  -validation  fr.inria.astor.approaches.rcapr.RCValidator  -mode  custom  -bintestfolder  /bin]
+[INFO ] fr.inria.main.evolution.AstorMain.execute(AstorMain.java:216) - Running Astor on a JDK at /usr/lib/jvm/java-8-openjdk-amd64/jre
+Source folders: [/home/basma/Desktop/astor/./examples/quixbugs/find5/src]
+Source Test folders: [/home/basma/Desktop/astor/./examples/quixbugs/find5/src]
+Compiling original code from [/home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/rules, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/matchers, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/hamcrest, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/theories, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/runners, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/junit/framework, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/theories/internal, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/runner/manipulation, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/theories/suppliers, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/results, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/hamcrest/internal, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/matchers, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/builders, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/max, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/runners, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/junit/textui, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/runners/rules, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/runner/notification, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/runners, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/META-INF, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/runners/model, /home/basma/Desktop/astor/examples/quixbugs/find5/src/java_programs_test, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/runners/statements, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/runners/model, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/hamcrest/core, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/experimental/categories, /home/basma/Desktop/astor/examples/quixbugs/find5/src/java_programs, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/runner, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/junit/extensions, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/org/junit/internal/requests, /home/basma/Desktop/astor/examples/quixbugs/find5/src/junit-4.11/junit/runner]
+ bytecode saved in /home/basma/Desktop/astor/./output_astor/AstorMain-find5/bin/default
+-Executing Gzoltar classpath: /home/basma/Desktop/astor/./output_astor/AstorMain-find5//bin//default from 1 classes with test cases
+Gzoltar fault localization: min susp value parameter: 0.0
+-gz-Adding classpath: [/home/basma/Desktop/astor/./output_astor/AstorMain-find5//bin//default, /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar]
+Test failt: java_programs_test.Find_first_in_sortedTest#test_2
+Gzoltar Test Result Total:7, fails: 1, GZoltar suspicious 13, with positive susp 9
+nr test results 7
+Gzoltar found: 9 with susp > 0.0, we consider: 9
+
+---- Creating spoon model
+Creating model,  Code location from working folder: /home/basma/Desktop/astor/./examples/quixbugs/find5/src
+building model: /home/basma/Desktop/astor/./examples/quixbugs/find5/src, compliance level: 8
+Classpath for building SpoonModel [/home/basma/Desktop/astor/./examples/libs/junit-4.4.jar]
+
+---- Initial suspicious size: 9
+Total suspicious from FL: 9,  15
+Total ModPoint created: 15
+Reducing Total ModPoint created to: 8
+Creating program variant #1, [Variant id: 1, #gens: 8, #ops: 0, parent:-]
+----------------------------
+---Configuration properties:---Execution values
+p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+p:alternativecompliancelevel= 4
+p:ignoredTestCases= 
+p:workingDirectory= /home/basma/Desktop/astor/./output_astor
+p:manipulatesuper= false
+p:validation= fr.inria.astor.approaches.rcapr.RCValidator
+p:jvm4testexecution= /usr/lib/jvm/java-8-openjdk-amd64/bin
+p:operatorspace= r-expression
+p:disablelog= TRUE
+p:binjavafolder= /bin
+p:synthesis_depth= 3
+p:gzoltartestpackagetoexclude= junit.framework
+p:skipfitnessinitialpopulation= false
+p:evosuiteresultfolder= evosuite
+p:flthreshold= 0.0
+p:regressionforfaultlocalization= true
+p:collectonlyusedmethod= false
+p:preservelinenumbers= true
+p:tmax2= 7290
+p:ingredienttransformstrategy= name-probability-based
+p:tmax1= 10000
+p:probagenmutation= false
+p:nomodificationconvergence= 100
+p:diff_type= relative
+p:targetelementprocessor= expression
+p:srctestfolder= /src
+p:forceExecuteRegression= false
+p:clusteringfilename= clustering.csv
+p:logtestexecution= TRUE
+p:evo_buggy_class= true
+p:numberExecutions= 1
+p:maxnumbersolutions= 1
+p:evo_affected_by_op= true
+p:population= 1
+p:considerzerovaluesusp= false
+p:maxCombinationVariableLimit= false
+p:loglevel= INFO
+p:savesolution= true
+p:javacompliancelevel= 8
+p:uniqueoptogen= false
+p:gzoltarpackagetonotinstrument= com.google.gson_engine-java_programs_test
+p:projectIdentifier= find5
+p:modificationpointnavigation= INORDER
+p:stopfirst= TRUE
+p:multipointmodification= false
+p:customengine= fr.inria.astor.approaches.rcapr.RCFixCr
+p:elementsToMutate= 10
+p:jsonoutputname= astor_output
+p:evoDSE= false
+p:bintestfolder= /bin
+p:testbystep= false
+p:version-location= ./math-version/
+p:reintroduce= PARENTS:ORIGINAL
+p:executorjar= ./lib/jtestex7.jar
+p:maxGeneration= 200
+p:max_synthesis_step= 10000
+p:maxVarCombination= 1000
+p:maxtime= 120
+p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+p:jvmversion= 1.8.0_232
+p:commandTrunk= 50000
+p:faultlocalization= gzoltar
+p:resetmodel= true
+p:maxsuspcandidates= 1000
+p:mode= custom
+p:learningdir= 
+p:jvm4evosuitetestexecution= /usr/lib/jvm/java-8-openjdk-amd64/bin
+p:filterfaultlocalization= true
+p:mutationrate= 1 
+p:pathToMVNRepository= 
+p:resourcesfolder= /src/main/resources:/src/test/resources:
+p:timezone= America/Los_Angeles
+p:runjava7code= false
+p:evoRunOnBuggyClass= true
+p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+p:limitbysuspicious= true
+p:logsattemps= true
+p:dependenciespath= /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar
+p:logpatternlayout= [%-5p] %l - %m%n
+p:packageToInstrument= java_programs
+p:skipfaultlocalization= false
+p:scope= package
+p:transformingredient= false
+p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+p:maxnumvariablesperingredient= 10
+p:parsesourcefromoriginal= true
+p:pvariantfoldername= variant-
+p:savespoonmodelondisk= false
+p:srcjavafolder= /src
+p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+p:ignoreflakyinfl= false
+p:cleantemplates= true
+p:applyCrossover= false
+p:maxmodificationpoints= 8
+p:duplicateingredientsinspace= false
+p:metid= 0
+p:saveall= false
+p:seed= 1
+p:savecompletepatched= true
+p:resetoperations= false
+p:processoutputinfile= false
+p:location= /home/basma/Desktop/astor/./examples/quixbugs/find5
+p:probabilistictransformation= true
+p:overridemaxtime= true
+p:allpoints= false
+p:autocompile= true
+p:bugId= 280
+p:evosuitetimeout= 120
+p:nrPlaceholders= 1
+p:forcesubprocesskilling= true
+----------------------------
+7
+Ingredient search space info : number keys 3 , number values 15 
+1
+1
+test_2
+
+ MP (1/8) location to modify: MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtUnaryOperatorImpl
+Replacement does not work for  modify -1 to -1
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `-1` (spoon.support.reflect.code.CtUnaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-2 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `-1` (spoon.support.reflect.code.CtUnaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtUnaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-3 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-4 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-5 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-6 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-7 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-8 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-9 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-10 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-11 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-12 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-13 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-14 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-15 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-16 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-17 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(lo + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-18 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(hi + x) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-19 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + lo) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-20 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `(x + hi) / 2` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[x]` (spoon.support.reflect.code.CtArrayReadImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-21 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[x]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[lo]` (spoon.support.reflect.code.CtArrayReadImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-22 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[lo]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[hi]` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-23 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[hi]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-24 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-25 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-26 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x - 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(x - 1)]` (spoon.support.reflect.code.CtArrayReadImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-27 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(x - 1)]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(lo - 1)]` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-28 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(lo - 1)]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(hi - 1)]` (spoon.support.reflect.code.CtArrayReadImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-29 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `arr[(hi - 1)]` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-30 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `lo + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-31 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `hi + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-32 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtUnaryOperatorImpl) `-1 ` -topatch--> `x + 1` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 19, pointed element: CtBinaryOperatorImplmodification point
+
+ MP (2/8) location to modify: MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImpl
+Replacement does not work for  modify lo < hi to lo < hi
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-33 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-34 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-35 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-36 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-37 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < k` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-38 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < k` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-39 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-40 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < k` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-41 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x < k` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-42 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < k` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-43 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo < k` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_0
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-44 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < k` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-45 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi < k` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-46 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-47 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-48 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k < hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-49 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-50 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-51 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-52 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-53 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-54 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-55 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-56 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-57 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-58 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-59 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-60 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-61 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[x])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-62 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[lo])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-63 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[hi])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-64 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == (arr[k])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_0
+test_2
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-65 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-66 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-67 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-68 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k == 0` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-69 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-70 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_0
+test_1
+test_2
+test_4
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-71 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-72 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-73 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-74 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-75 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-76 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-77 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-78 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-79 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-80 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-81 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-82 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-83 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-84 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k != (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (x != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-85 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (x != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (x != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-86 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (x != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (x != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_0
+test_1
+test_2
+test_4
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-87 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (x != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (x != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-88 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (x != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (lo != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-89 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (lo != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (lo != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-90 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (lo != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (lo != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-91 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (lo != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (lo != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-92 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (lo != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (hi != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-93 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (hi != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (hi != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-94 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (hi != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (hi != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-95 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (hi != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (hi != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-96 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (hi != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (k != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-97 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == 0) || (k != (arr[(x - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (k != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-98 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == 0) || (k != (arr[(lo - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (k != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-99 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == 0) || (k != (arr[(hi - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (k != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-100 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == 0) || (k != (arr[(k - 1)]))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[x])) && ((x == 0) || (x != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-101 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[x])) && ((x == 0) || (x != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[x])) && ((x == 0) || (lo != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-102 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[x])) && ((x == 0) || (lo != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[x])) && ((x == 0) || (hi != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-103 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[x])) && ((x == 0) || (hi != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[x])) && ((x == 0) || (k != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-104 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[x])) && ((x == 0) || (k != (arr[(x - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[lo])) && ((lo == 0) || (x != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-105 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[lo])) && ((lo == 0) || (x != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[lo])) && ((lo == 0) || (lo != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-106 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[lo])) && ((lo == 0) || (lo != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[lo])) && ((lo == 0) || (hi != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-107 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[lo])) && ((lo == 0) || (hi != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[lo])) && ((lo == 0) || (k != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+4
+4
+test_0
+test_3
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-108 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[lo])) && ((lo == 0) || (k != (arr[(lo - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[hi])) && ((hi == 0) || (x != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-109 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[hi])) && ((hi == 0) || (x != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[hi])) && ((hi == 0) || (lo != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-110 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[hi])) && ((hi == 0) || (lo != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[hi])) && ((hi == 0) || (hi != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-111 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[hi])) && ((hi == 0) || (hi != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[hi])) && ((hi == 0) || (k != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-112 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[hi])) && ((hi == 0) || (k != (arr[(hi - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[k])) && ((k == 0) || (x != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-113 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(x == (arr[k])) && ((k == 0) || (x != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[k])) && ((k == 0) || (lo != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-114 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(lo == (arr[k])) && ((k == 0) || (lo != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[k])) && ((k == 0) || (hi != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-115 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(hi == (arr[k])) && ((k == 0) || (hi != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[k])) && ((k == 0) || (k != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-116 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `(k == (arr[k])) && ((k == 0) || (k != (arr[(k - 1)])))` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-117 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-118 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-119 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-120 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `x <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-121 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-122 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-123 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-124 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `lo <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_0
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-125 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-126 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+2
+2
+test_0
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-127 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-128 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `hi <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-129 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(x - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-130 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(lo - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+3
+3
+test_1
+test_2
+test_4
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-131 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(hi - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-132 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `lo < hi ` -topatch--> `k <= (arr[(k - 1)])` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 20, pointed element: CtBinaryOperatorImplmodification point
+
+ MP (3/8) location to modify: MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImpl
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(-1)` (spoon.support.reflect.code.CtUnaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-133 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(-1)` (spoon.support.reflect.code.CtUnaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtUnaryOperatorImplmodification point
+Replacement does not work for  modify (lo + hi) to (lo + hi)
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-134 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+1
+1
+test_2
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-135 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-136 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-137 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-138 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-139 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-140 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-141 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_1
+test_2
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-142 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-143 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-144 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-145 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-146 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_1
+test_2
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-147 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-148 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-149 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-150 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-151 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-152 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-153 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-154 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-155 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-156 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-157 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-158 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + x) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-159 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-160 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + lo) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-161 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-162 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((k + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-163 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((x + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-164 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((lo + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-165 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `((hi + k) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[x])` (spoon.support.reflect.code.CtArrayReadImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-166 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[x])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[lo])` (spoon.support.reflect.code.CtArrayReadImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-167 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[lo])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[hi])` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-168 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[hi])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[k])` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-169 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[k])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-170 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-171 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_1
+test_2
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-172 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-173 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k - 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(x - 1)])` (spoon.support.reflect.code.CtArrayReadImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-174 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(x - 1)])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(lo - 1)])` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-175 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(lo - 1)])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(hi - 1)])` (spoon.support.reflect.code.CtArrayReadImpl) 
+6
+6
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-176 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(hi - 1)])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(k - 1)])` (spoon.support.reflect.code.CtArrayReadImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-177 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(arr[(k - 1)])` (spoon.support.reflect.code.CtArrayReadImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtArrayReadImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-178 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(lo + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+5
+5
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-179 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(hi + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-180 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(x + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-181 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) ` -topatch--> `(k + 1)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+
+ MP (4/8) location to modify: MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImpl
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `-1` (spoon.support.reflect.code.CtUnaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-182 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `-1` (spoon.support.reflect.code.CtUnaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtUnaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-183 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-184 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-185 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-186 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-187 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + k` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-188 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + k` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-189 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `lo + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-190 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `hi + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + x` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+6
+6
+test_0
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-191 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + x` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-192 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-193 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + lo` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+7
+7
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-194 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `x + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+0
+0
+****+++1
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5/src/variant-195 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(lo + hi) / 2 ` -topatch--> `k + hi` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 21, pointed element: CtBinaryOperatorImplmodification point
+-Found Solution, child variant #195
+/home/basma/Desktop/astor/./output_astor/AstorMain-find5//bin//default
+Time Repair Loop (s): 758.694
+generationsexecuted: 1
+
+----SUMMARY_EXECUTION---
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 195
+ 
+time(sec)= 756
+operation: ExpressionReplaceOperator
+location= java_programs.FIND_FIRST_IN_SORTED
+line= 21
+lineSuspiciousness= 0.378
+lineSuspiciousness= 3
+original statement= (lo + hi) / 2
+buggy kind= CtBinaryOperatorImpl|CtLocalVariableImpl
+fixed statement= k + hi
+Patch kind= CtBinaryOperatorImpl|CtLocalVariableImpl
+generation= 1
+ingredientScope= -
+ingredientParent= (_int_0 + _int_1)
+validation=fr.inria.astor.approaches.rcapr.RCValidationSp@109941fa
+diffpatch=
+
+diffpatchoriginal=
+
+
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=find5
+TOTAL_TIME=758.694
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=194
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=195
+TIME=756
+VALIDATION=fr.inria.astor.approaches.rcapr.RCValidationSp@109941fa
+GENERATION=1
+FOLDER_SOLUTION_CODE=/home/basma/Desktop/astor/./output_astor/AstorMain-find5//src//variant-195
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FIND_FIRST_IN_SORTED
+
+PATH=/home/basma/Desktop/astor/examples/quixbugs/find5/src/java_programs/FIND_FIRST_IN_SORTED.java
+
+MODIFIED_FILE_PATH=/home/basma/Desktop/astor/./output_astor/AstorMain-find5//src//variant-195/java_programs/FIND_FIRST_IN_SORTED.java
+
+LINE=21
+
+SUSPICIOUNESS=0.378
+
+MP_RANKING=3
+
+ORIGINAL_CODE=(lo + hi) / 2
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtLocalVariableImpl
+
+PATCH_HUNK_CODE=k + hi
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtLocalVariableImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_int_0 + _int_1)
+
+PATCH_DIFF_ORIG=
+
+
+Storing ing JSON at /home/basma/Desktop/astor/./output_astor/AstorMain-find5//astor_output.json
+astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":194,"NR_ERRONEOUS_VARIANCES":null,"EXECUTION_IDENTIFIER":"find5","OUTPUT_STATUS":"STOP_BY_PATCH_FOUND","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":758.694,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[{"VARIANT_ID":"195","VALIDATION":"fr.inria.astor.approaches.rcapr.RCValidationSp@109941fa","patchhunks":[{"LOCATION":"java_programs.FIND_FIRST_IN_SORTED","PATH":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/examples\\\/quixbugs\\\/find5\\\/src\\\/java_programs\\\/FIND_FIRST_IN_SORTED.java","INGREDIENT_SCOPE":"-","SUSPICIOUNESS":"0.378","INGREDIENT_PARENT":"(_int_0 + _int_1)","PATCH_HUNK_TYPE":"CtBinaryOperatorImpl|CtLocalVariableImpl","ORIGINAL_CODE":"(lo + hi) \\\/ 2","BUGGY_CODE_TYPE":"CtBinaryOperatorImpl|CtLocalVariableImpl","OPERATOR":"ExpressionReplaceOperator","MODIFIED_FILE_PATH":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/.\\\/output_astor\\\/AstorMain-find5\\\/\\\/src\\\/\\\/variant-195\\\/java_programs\\\/FIND_FIRST_IN_SORTED.java","LINE":"21","MP_RANKING":"3","PATCH_HUNK_CODE":"k + hi"}],"TIME":"756","GENERATION":"1","FOLDER_SOLUTION_CODE":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/.\\\/output_astor\\\/AstorMain-find5\\\/\\\/src\\\/\\\/variant-195","PATCH_DIFF_ORIG":"\\n"}]}
+Time Total(s): 805.743
++++++++++++/home/basma/Desktop/astor/./output_astor/AstorMain-find5//src//variant-195/java_programs/FIND_FIRST_IN_SORTED.java########

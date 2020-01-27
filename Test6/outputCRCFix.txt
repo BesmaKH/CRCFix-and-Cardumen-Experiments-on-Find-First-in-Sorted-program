@@ -1,0 +1,1655 @@
+[INFO ] fr.inria.astor.core.setup.ProjectConfiguration.getVersionJDK(ProjectConfiguration.java:282) - Version of the JVM used: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:370) - Java version of the JDK used to run tests: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:371) - The compliance of the JVM is:  8
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:645) - command line arguments: [-customengine  fr.inria.astor.approaches.rcapr.RCFixCr  -package  java_programs  -srcjavafolder  /src  -id  find6  -scope  package  -binjavafolder  /bin  -population  1  -flthreshold  0.0  -seed  1  -stopfirst  TRUE  -loglevel  INFO  -srctestfolder  /src  -location  /home/basma/Desktop/astor/./examples/quixbugs/find6  -javacompliancelevel  8  -dependencies  /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar  -parameters  logtestexecution:TRUE:disablelog:TRUE:maxtime:120:autocompile:true:gzoltarpackagetonotinstrument:com.google.gson_engine-java_programs_test:maxnumbersolutions:1:maxmodificationpoints:8  -validation  fr.inria.astor.approaches.rcapr.RCValidator  -mode  custom  -bintestfolder  /bin]
+[INFO ] fr.inria.main.evolution.AstorMain.execute(AstorMain.java:216) - Running Astor on a JDK at /usr/lib/jvm/java-8-openjdk-amd64/jre
+Source folders: [/home/basma/Desktop/astor/./examples/quixbugs/find6/src]
+Source Test folders: [/home/basma/Desktop/astor/./examples/quixbugs/find6/src]
+Compiling original code from [/home/basma/Desktop/astor/examples/quixbugs/find6/src/java_programs, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/runner/notification, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental, /home/basma/Desktop/astor/examples/quixbugs/find6/src/java_programs_test, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/theories/suppliers, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/junit/runner, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/hamcrest/internal, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/rules, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/runners/model, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/junit/textui, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/matchers, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/runners, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/junit/extensions, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/results, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/runners, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/runner, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/runners, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/hamcrest, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/junit/framework, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/runners/statements, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/builders, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/matchers, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/categories, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/max, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/runners/rules, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/internal/requests, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/runners/model, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/hamcrest/core, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/runner/manipulation, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/theories/internal, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/org/junit/experimental/theories, /home/basma/Desktop/astor/examples/quixbugs/find6/src/junit-4.11/META-INF]
+ bytecode saved in /home/basma/Desktop/astor/./output_astor/AstorMain-find6/bin/default
+-Executing Gzoltar classpath: /home/basma/Desktop/astor/./output_astor/AstorMain-find6//bin//default from 1 classes with test cases
+Gzoltar fault localization: min susp value parameter: 0.0
+-gz-Adding classpath: [/home/basma/Desktop/astor/./output_astor/AstorMain-find6//bin//default, /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar]
+Test failt: java_programs_test.Find_first_in_sortedTest#test_22
+Test failt: java_programs_test.Find_first_in_sortedTest#test_41
+Test failt: java_programs_test.Find_first_in_sortedTest#test_61
+Test failt: java_programs_test.Find_first_in_sortedTest#test_67
+Test failt: java_programs_test.Find_first_in_sortedTest#test_69
+Test failt: java_programs_test.Find_first_in_sortedTest#test_79
+Test failt: java_programs_test.Find_first_in_sortedTest#test_80
+Test failt: java_programs_test.Find_first_in_sortedTest#test_2
+Gzoltar Test Result Total:100, fails: 8, GZoltar suspicious 13, with positive susp 9
+nr test results 100
+Gzoltar found: 9 with susp > 0.0, we consider: 9
+
+---- Creating spoon model
+Creating model,  Code location from working folder: /home/basma/Desktop/astor/./examples/quixbugs/find6/src
+building model: /home/basma/Desktop/astor/./examples/quixbugs/find6/src, compliance level: 8
+Classpath for building SpoonModel [/home/basma/Desktop/astor/./examples/libs/junit-4.4.jar]
+
+---- Initial suspicious size: 9
+Total suspicious from FL: 9,  15
+Total ModPoint created: 15
+Reducing Total ModPoint created to: 8
+Creating program variant #1, [Variant id: 1, #gens: 8, #ops: 0, parent:-]
+----------------------------
+---Configuration properties:---Execution values
+p:lastJUnitVersion= ./examples/libs/junit-4.11.jar
+p:alternativecompliancelevel= 4
+p:ignoredTestCases= 
+p:workingDirectory= /home/basma/Desktop/astor/./output_astor
+p:manipulatesuper= false
+p:validation= fr.inria.astor.approaches.rcapr.RCValidator
+p:jvm4testexecution= /usr/lib/jvm/java-8-openjdk-amd64/bin
+p:operatorspace= r-expression
+p:disablelog= TRUE
+p:binjavafolder= /bin
+p:synthesis_depth= 3
+p:gzoltartestpackagetoexclude= junit.framework
+p:skipfitnessinitialpopulation= false
+p:evosuiteresultfolder= evosuite
+p:flthreshold= 0.0
+p:regressionforfaultlocalization= true
+p:collectonlyusedmethod= false
+p:preservelinenumbers= true
+p:tmax2= 11706
+p:ingredienttransformstrategy= name-probability-based
+p:tmax1= 10000
+p:probagenmutation= false
+p:nomodificationconvergence= 100
+p:diff_type= relative
+p:targetelementprocessor= expression
+p:srctestfolder= /src
+p:forceExecuteRegression= false
+p:clusteringfilename= clustering.csv
+p:logtestexecution= TRUE
+p:evo_buggy_class= true
+p:numberExecutions= 1
+p:maxnumbersolutions= 1
+p:evo_affected_by_op= true
+p:population= 1
+p:considerzerovaluesusp= false
+p:maxCombinationVariableLimit= false
+p:loglevel= INFO
+p:savesolution= true
+p:javacompliancelevel= 8
+p:uniqueoptogen= false
+p:gzoltarpackagetonotinstrument= com.google.gson_engine-java_programs_test
+p:projectIdentifier= find6
+p:modificationpointnavigation= INORDER
+p:stopfirst= TRUE
+p:multipointmodification= false
+p:customengine= fr.inria.astor.approaches.rcapr.RCFixCr
+p:elementsToMutate= 10
+p:jsonoutputname= astor_output
+p:evoDSE= false
+p:bintestfolder= /bin
+p:testbystep= false
+p:version-location= ./math-version/
+p:reintroduce= PARENTS:ORIGINAL
+p:executorjar= ./lib/jtestex7.jar
+p:maxGeneration= 200
+p:max_synthesis_step= 10000
+p:maxVarCombination= 1000
+p:maxtime= 120
+p:evosuitejar= ./lib/evosuite-master-1.0.4-SNAPSHOT.jar
+p:jvmversion= 1.8.0_232
+p:commandTrunk= 50000
+p:faultlocalization= gzoltar
+p:resetmodel= true
+p:maxsuspcandidates= 1000
+p:mode= custom
+p:learningdir= 
+p:jvm4evosuitetestexecution= /usr/lib/jvm/java-8-openjdk-amd64/bin
+p:filterfaultlocalization= true
+p:mutationrate= 1 
+p:pathToMVNRepository= 
+p:resourcesfolder= /src/main/resources:/src/test/resources:
+p:timezone= America/Los_Angeles
+p:runjava7code= false
+p:evoRunOnBuggyClass= true
+p:compiler= fr.inria.astor.core.manipulation.bytecode.compiler.SpoonClassCompiler
+p:limitbysuspicious= true
+p:logsattemps= true
+p:dependenciespath= /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar
+p:logpatternlayout= [%-5p] %l - %m%n
+p:packageToInstrument= java_programs
+p:skipfaultlocalization= false
+p:scope= package
+p:transformingredient= false
+p:fitnessfunction= fr.inria.astor.core.solutionsearch.population.TestCaseFitnessFunction
+p:maxnumvariablesperingredient= 10
+p:parsesourcefromoriginal= true
+p:pvariantfoldername= variant-
+p:savespoonmodelondisk= false
+p:srcjavafolder= /src
+p:populationcontroller= fr.inria.astor.core.solutionsearch.population.TestCaseBasedFitnessPopulationController
+p:ignoreflakyinfl= false
+p:cleantemplates= true
+p:applyCrossover= false
+p:maxmodificationpoints= 8
+p:duplicateingredientsinspace= false
+p:metid= 0
+p:saveall= false
+p:seed= 1
+p:savecompletepatched= true
+p:resetoperations= false
+p:processoutputinfile= false
+p:location= /home/basma/Desktop/astor/./examples/quixbugs/find6
+p:probabilistictransformation= true
+p:overridemaxtime= true
+p:allpoints= false
+p:autocompile= true
+p:bugId= 280
+p:evosuitetimeout= 120
+p:nrPlaceholders= 1
+p:forcesubprocesskilling= true
+----------------------------
+100
+Ingredient search space info : number keys 3 , number values 15 
+8
+8
+test_2
+test_22
+test_41
+test_61
+test_67
+test_69
+test_79
+test_80
+
+ MP (1/8) location to modify: MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImpl
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(-1)` (spoon.support.reflect.code.CtUnaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-2 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(-1)` (spoon.support.reflect.code.CtUnaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtUnaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-3 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-4 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+49
+88
+test_0
+test_1
+test_4
+test_6
+test_7
+test_8
+test_9
+test_11
+test_12
+test_14
+test_15
+test_19
+test_21
+test_23
+test_30
+test_32
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_42
+test_43
+test_44
+test_46
+test_47
+test_50
+test_56
+test_57
+test_64
+test_66
+test_71
+test_73
+test_74
+test_75
+test_78
+test_81
+test_82
+test_84
+test_85
+test_87
+test_93
+test_94
+test_95
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-5 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-6 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+74
+138
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_50
+test_51
+test_53
+test_54
+test_56
+test_57
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_89
+test_90
+test_93
+test_94
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-7 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-8 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+67
+124
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_50
+test_51
+test_53
+test_56
+test_57
+test_62
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_77
+test_78
+test_79
+test_81
+test_82
+test_84
+test_85
+test_87
+test_90
+test_93
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-9 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-10 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+64
+118
+test_0
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_23
+test_24
+test_26
+test_27
+test_29
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_50
+test_51
+test_52
+test_53
+test_57
+test_62
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_77
+test_78
+test_79
+test_81
+test_82
+test_84
+test_85
+test_87
+test_90
+test_93
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-11 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + x)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+67
+124
+test_0
+test_1
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_50
+test_51
+test_53
+test_56
+test_57
+test_62
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_77
+test_78
+test_79
+test_81
+test_82
+test_84
+test_85
+test_87
+test_90
+test_93
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-12 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-13 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + lo)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-14 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+21
+32
+test_0
+test_3
+test_5
+test_6
+test_9
+test_15
+test_17
+test_23
+test_24
+test_29
+test_31
+test_33
+test_34
+test_36
+test_44
+test_64
+test_66
+test_81
+test_84
+test_87
+test_98
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-15 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(k + hi)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+64
+118
+test_0
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_23
+test_24
+test_26
+test_27
+test_29
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_50
+test_51
+test_52
+test_53
+test_57
+test_62
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_77
+test_78
+test_79
+test_81
+test_82
+test_84
+test_85
+test_87
+test_90
+test_93
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-16 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(x + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+89
+168
+test_0
+test_1
+test_2
+test_3
+test_4
+test_5
+test_6
+test_7
+test_8
+test_9
+test_10
+test_11
+test_12
+test_14
+test_15
+test_16
+test_17
+test_19
+test_21
+test_22
+test_23
+test_24
+test_26
+test_27
+test_29
+test_30
+test_31
+test_32
+test_33
+test_34
+test_35
+test_36
+test_37
+test_38
+test_39
+test_40
+test_41
+test_42
+test_43
+test_44
+test_45
+test_46
+test_47
+test_48
+test_49
+test_50
+test_51
+test_52
+test_53
+test_54
+test_56
+test_57
+test_59
+test_61
+test_62
+test_63
+test_64
+test_65
+test_66
+test_67
+test_68
+test_69
+test_70
+test_71
+test_72
+test_73
+test_74
+test_75
+test_76
+test_77
+test_78
+test_79
+test_80
+test_81
+test_82
+test_84
+test_85
+test_87
+test_88
+test_89
+test_90
+test_92
+test_93
+test_94
+test_95
+test_96
+test_97
+test_98
+test_99
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-17 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(lo + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+21
+32
+test_0
+test_3
+test_5
+test_6
+test_9
+test_15
+test_17
+test_23
+test_24
+test_29
+test_31
+test_33
+test_34
+test_36
+test_44
+test_64
+test_66
+test_81
+test_84
+test_87
+test_98
+****+++-2
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-18 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `(hi + k)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+Operator:
+ OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `((lo + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl) 
+0
+0
+****+++1
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6/src/variant-19 folder
+OP_INSTANCE:
+ExpressionReplaceOperator:(spoon.support.reflect.code.CtBinaryOperatorImpl) `(mid - 1) ` -topatch--> `((lo + hi) / 2)` (spoon.support.reflect.code.CtBinaryOperatorImpl)  operatio n
+MP=java_programs.FIND_FIRST_IN_SORTED line: 26, pointed element: CtBinaryOperatorImplmodification point
+-Found Solution, child variant #19
+/home/basma/Desktop/astor/./output_astor/AstorMain-find6//bin//default
+Time Repair Loop (s): 108.374
+generationsexecuted: 1
+
+----SUMMARY_EXECUTION---
+
+ --SOLUTIONS DESCRIPTION--
+
+ ----
+ProgramVariant 19
+ 
+time(sec)= 91
+operation: ExpressionReplaceOperator
+location= java_programs.FIND_FIRST_IN_SORTED
+line= 26
+lineSuspiciousness= 0.3
+lineSuspiciousness= 0
+original statement= (mid - 1)
+buggy kind= CtBinaryOperatorImpl|CtArrayReadImpl
+fixed statement= ((lo + hi) / 2)
+Patch kind= CtBinaryOperatorImpl|CtArrayReadImpl
+generation= 1
+ingredientScope= -
+ingredientParent= (_int_0 + _int_1) / 2
+validation=fr.inria.astor.approaches.rcapr.RCValidationSp@1937eaff
+diffpatch=
+
+diffpatchoriginal=
+
+
+Astor Output:
+
+General stats:
+EXECUTION_IDENTIFIER=find6
+TOTAL_TIME=108.374
+NR_GENERATIONS=null
+NR_RIGHT_COMPILATIONS=18
+NR_FAILLING_COMPILATIONS=null
+NR_ERRONEOUS_VARIANCES=null
+NR_FAILING_VALIDATION_PROCESS=null
+OUTPUT_STATUS=STOP_BY_PATCH_FOUND
+
+Patch stats:
+
+Patch 1
+VARIANT_ID=19
+TIME=91
+VALIDATION=fr.inria.astor.approaches.rcapr.RCValidationSp@1937eaff
+GENERATION=1
+FOLDER_SOLUTION_CODE=/home/basma/Desktop/astor/./output_astor/AstorMain-find6//src//variant-19
+--Patch Hunk #1
+OPERATOR=ExpressionReplaceOperator
+
+LOCATION=java_programs.FIND_FIRST_IN_SORTED
+
+PATH=/home/basma/Desktop/astor/examples/quixbugs/find6/src/java_programs/FIND_FIRST_IN_SORTED.java
+
+MODIFIED_FILE_PATH=/home/basma/Desktop/astor/./output_astor/AstorMain-find6//src//variant-19/java_programs/FIND_FIRST_IN_SORTED.java
+
+LINE=26
+
+SUSPICIOUNESS=0.3
+
+MP_RANKING=0
+
+ORIGINAL_CODE=(mid - 1)
+
+BUGGY_CODE_TYPE=CtBinaryOperatorImpl|CtArrayReadImpl
+
+PATCH_HUNK_CODE=((lo + hi) / 2)
+
+PATCH_HUNK_TYPE=CtBinaryOperatorImpl|CtArrayReadImpl
+
+INGREDIENT_SCOPE=-
+
+INGREDIENT_PARENT=(_int_0 + _int_1) / 2
+
+PATCH_DIFF_ORIG=
+
+
+Storing ing JSON at /home/basma/Desktop/astor/./output_astor/AstorMain-find6//astor_output.json
+astor_output:
+{"general":{"NR_RIGHT_COMPILATIONS":18,"NR_ERRONEOUS_VARIANCES":null,"EXECUTION_IDENTIFIER":"find6","OUTPUT_STATUS":"STOP_BY_PATCH_FOUND","NR_FAILLING_COMPILATIONS":null,"NR_GENERATIONS":null,"TOTAL_TIME":108.374,"NR_FAILING_VALIDATION_PROCESS":null},"patches":[{"VARIANT_ID":"19","VALIDATION":"fr.inria.astor.approaches.rcapr.RCValidationSp@1937eaff","patchhunks":[{"LOCATION":"java_programs.FIND_FIRST_IN_SORTED","PATH":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/examples\\\/quixbugs\\\/find6\\\/src\\\/java_programs\\\/FIND_FIRST_IN_SORTED.java","INGREDIENT_SCOPE":"-","SUSPICIOUNESS":"0.3","INGREDIENT_PARENT":"(_int_0 + _int_1) \\\/ 2","PATCH_HUNK_TYPE":"CtBinaryOperatorImpl|CtArrayReadImpl","ORIGINAL_CODE":"(mid - 1)","BUGGY_CODE_TYPE":"CtBinaryOperatorImpl|CtArrayReadImpl","OPERATOR":"ExpressionReplaceOperator","MODIFIED_FILE_PATH":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/.\\\/output_astor\\\/AstorMain-find6\\\/\\\/src\\\/\\\/variant-19\\\/java_programs\\\/FIND_FIRST_IN_SORTED.java","LINE":"26","MP_RANKING":"0","PATCH_HUNK_CODE":"((lo + hi) \\\/ 2)"}],"TIME":"91","GENERATION":"1","FOLDER_SOLUTION_CODE":"\\\/home\\\/basma\\\/Desktop\\\/astor\\\/.\\\/output_astor\\\/AstorMain-find6\\\/\\\/src\\\/\\\/variant-19","PATCH_DIFF_ORIG":"\\n"}]}
+Time Total(s): 168.234
++++++++++++/home/basma/Desktop/astor/./output_astor/AstorMain-find6//src//variant-19/java_programs/FIND_FIRST_IN_SORTED.java########

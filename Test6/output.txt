@@ -1,0 +1,20 @@
+[INFO ] fr.inria.astor.core.setup.ProjectConfiguration.getVersionJDK(ProjectConfiguration.java:282) - Version of the JVM used: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:370) - Java version of the JDK used to run tests: 1.8.0_232
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:371) - The compliance of the JVM is:  8
+[INFO ] fr.inria.main.AbstractMain.processArguments(AbstractMain.java:645) - command line arguments: [-package  java_programs  -srcjavafolder  /src  -id  find_first_in_sorted6  -scope  package  -binjavafolder  /bin  -population  1  -flthreshold  0.0  -seed  1  -stopfirst  TRUE  -loglevel  DEBUG  -srctestfolder  /src  -location  /home/basma/Desktop/astor/./examples/quixbugs/find_first_in_sorted6  -javacompliancelevel  8  -dependencies  /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar  -parameters  logtestexecution:TRUE:disablelog:TRUE:maxtime:120:autocompile:true:gzoltarpackagetonotinstrument:com.google.gson_engine-java_programs_test  -mode  cardumen  -bintestfolder  /bin  -maxgen  700]
+[INFO ] fr.inria.main.evolution.AstorMain.execute(AstorMain.java:216) - Running Astor on a JDK at /usr/lib/jvm/java-8-openjdk-amd64/jre
+Source folders: [/home/basma/Desktop/astor/./examples/quixbugs/find_first_in_sorted6/src]
+Source Test folders: [/home/basma/Desktop/astor/./examples/quixbugs/find_first_in_sorted6/src]
+Original Bin folder does not exist
+Original Bin folder does not exist
+Add folder to compile: /home/basma/Desktop/astor/./examples/quixbugs/find_first_in_sorted6/src
+Add folder to compile: /home/basma/Desktop/astor/./examples/quixbugs/find_first_in_sorted6/src
+Compiling original code from [/home/basma/Desktop/astor/examples/quixbugs/find_first_in_sorted6/src/java_programs, /home/basma/Desktop/astor/examples/quixbugs/find_first_in_sorted6/src/java_programs_test]
+ bytecode saved in /home/basma/Desktop/astor/./output_astor/AstorMain-find_first_in_sorted6/bin/default
+-Executing Gzoltar classpath: /home/basma/Desktop/astor/./output_astor/AstorMain-find_first_in_sorted6//bin//default from 0 classes with test cases
+Gzoltar fault localization: min susp value parameter: 0.0
+Gzoltar run over: /home/basma/Desktop/astor/./output_astor/AstorMain-find_first_in_sorted6/bin/default , does it exist? true
+-gz-Adding classpath: [/home/basma/Desktop/astor/./output_astor/AstorMain-find_first_in_sorted6//bin//default, /home/basma/Desktop/astor/./examples/libs/junit-4.4.jar]
+Gzoltar Test Result Total:0, fails: 0, GZoltar suspicious 0, with positive susp 0
+nr test results 0
+Gzoltar found: 0 with susp > 0.0, we consider: 0
