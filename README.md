@@ -44,7 +44,7 @@ public class FIND_FIRST_IN_SORTED {
 ```
 # Evaluation
 Output Files, in each folder, give the exact output of every execution on CRCFix and Cardumen
-## -CRCFix 
+##  - CRCFix 
 we can notice the stepwise correctness enhancement process, where in each iteration, CRCFix visit suspicious location in the order returned by the fault localization step until it founds out a more correct patch if any (using a non deterministic specification and relative correctness)  and then reiterate the process
-## - Cardumen 
+##  - Cardumen 
 Limited by the maximum allowed time and the maximum number of generation permitted, pick randomly of suspicious location, with a random template, instantiate a patch using some probabilistic strategie and then validate it based on the number of failing tests.
