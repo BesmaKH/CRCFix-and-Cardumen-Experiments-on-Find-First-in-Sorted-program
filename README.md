@@ -1,4 +1,4 @@
-# RCFix-and-Cardumen-Experiments-on-Find-First-in-Sorted-program
+# CRCFix-and-Cardumen-Experiments-on-Find-First-in-Sorted-program
 This experiment is to evaluate effectiveness of two representative automatic program repair tools Cardumen and CRCFix on repairing find first in sorted program from [QuixBugs](https://github.com/jkoppel/QuixBugs/) benchmark when the program contains more than one single fault. [QuixBugs](https://github.com/jkoppel/QuixBugs/) is a benchmark suite of 40 confirmed bugs from classic algorithms with a bug on a single line of code. Particularly, Find first in sorted is a program where the goal is to find the first occurrence of a certain integer in a sorted array.
 
 Before we start our experiment, we did some preperation work to contribute find first in sorted program with a non-deterministic specification to evaluate CRCFix and Cardumen approach. We instantiate case studies where, in each, we insert in a convenient way two single site faults in the buggy program to figure out, support or demonstrate a foundation. We also modify the test suite when needed. Find first in sorted is equipped with an original test suite of size 7.  
