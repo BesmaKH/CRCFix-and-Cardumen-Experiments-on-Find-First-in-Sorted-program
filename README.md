@@ -4,13 +4,16 @@ This experiment is to evaluate effectiveness of two representative automatic pro
 Before we start our experiment, we did some preperation work to contribute find first in sorted program with a non-deterministic specification to evaluate CRCFix and Cardumen approach. We instantiate case studies where, in each, we insert in a convenient way two single site faults in the buggy program to figure out, support or demonstrate a foundation. We also modify the test suite when needed. Find first in sorted is equipped with an original test suite of size 7.  
 
 Our Tool RCFix was built using  [Astor](https://github.com/SpoonLabs/astor/) a famous open source program repair tool. CRCFix use the same patch generation approach as Cardumen but use Relative Correctness in  a stepwise correctness enhancement process.
+
 # Folder Structures
 Each folder corresponds to a case study, it contains:
 - Find_first_sorted.java: The buggy program
+- Find_first_sortedTest.java: The Test class that contains added junits tests (if any)
 - outputRCFix: The output of the RCFix approach
 - outputCardumen: The output of the Cardumen approach
+
 # Correct Find_first_in_sorted program :
-this is the correct version of the program under repair:
+This is the correct version of the program under repair:
 ```javascript
 
 public class FIND_FIRST_IN_SORTED {
@@ -39,3 +42,9 @@ public class FIND_FIRST_IN_SORTED {
 }
 
 ```
+# Evaluation
+Output Files, in each folder, give the exact output of every execution on CRCFix and Cardumen
+## -CRCFix 
+we can notice the stepwise correctness enhancement process, where in each iteration, CRCFix visit suspicious location in the order returned by the fault localization step until it founds out a more correct patch if any and then reiterate the process
+## - Cardumen 
+Limited by the maximum allowed time and the maximum number of generation permitted, pick randomly of suspicious location, with a random template, instantiate a patch using some probabilistic strategie and then validate it based on the number of failing tests.
